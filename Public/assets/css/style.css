@@ -1,0 +1,81 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;/* controls how the width and height of an element are calculated */
+} 
+
+body{
+    background: #4070f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 20px 25px;
+    /* margin: 25px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0.2, 0.2); */
+    border-radius: 8px;
+
+}
+
+.input-box {
+ width: 100%;
+ position: relative; /* creates a positioning context and child elements with 
+ position: absolute will be placed relative to this element */ 
+ margin-bottom: 16px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 30px 10px 10px; /* adds space for icon on the right */
+    border: 1px solid #ccccccc9;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.input-box i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+    pointer-events: none;
+}
+
+h2 {
+    margin: 18px;
+}
+
+.pass-box {
+     width: 100%;
+ position: relative; /* creates a positioning context and child elements with 
+ position: absolute will be placed relative to this element */ 
+ margin-bottom: 16px;
+}
+
+.pass-box input {
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    border: 1px solid #ccccccc9;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pass-box i{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+     transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+    pointer-events: none;
+}
