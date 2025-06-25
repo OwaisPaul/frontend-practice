@@ -3,21 +3,21 @@
 
     function playGame(humanChoice) {
       const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-      console.log(`Computer chose: ${computerChoice}`);
-      console.log(`User chose: ${humanChoice}`);
+      alert(`Computer chose: ${computerChoice} , you chose: ${humanChoice}`);
+      
 
       if (computerChoice === humanChoice) {
-        console.log('Tie');
+        alert('Tie');
       } else if (
         (computerChoice === 'rock' && humanChoice === 'paper') ||
         (computerChoice === 'paper' && humanChoice === 'scissors') ||
         (computerChoice === 'scissors' && humanChoice === 'rock')
       ) {
-        console.log(`${humanChoice} beats ${computerChoice}. You won!`);
+        alert(`${humanChoice} beats ${computerChoice}. You won!`);
       } else {
-        console.log(`${computerChoice} beats ${humanChoice}. You lost.`);
+        alert(`${computerChoice} beats ${humanChoice}. You lost.`);
       }
-    }
+    }  
 
     document.getElementById('rock').onclick = () => playGame('rock');
     document.getElementById('paper').onclick = () => playGame('paper');
