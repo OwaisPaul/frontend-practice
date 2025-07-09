@@ -13,8 +13,8 @@
       
 
       if (computerChoice === humanChoice) {
-        alert(`Tie
-           wins  ${score.wins += 1} losses ${score.losses} ties ${score.ties}`);
+        alert(` same choice its a Tie
+           wins  ${score.wins += 1} losses ${score.losses} ties ${score.ties += 1}`);
       } else if (
         (computerChoice === 'rock' && humanChoice === 'paper') ||
         (computerChoice === 'paper' && humanChoice === 'scissors') ||
@@ -32,3 +32,6 @@
     document.getElementById('rock').onclick = () => playGame('rock');
     document.getElementById('paper').onclick = () => playGame('paper');
     document.getElementById('scissors').onclick = () => playGame('scissors');
+    document.getElementById('reset').onclick = () => 
+      alert(`wins ${score.wins = 0}, losses ${score.losses = 0}, ties ${score.ties = 0}`)
+     
