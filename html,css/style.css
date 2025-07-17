@@ -1,0 +1,140 @@
+#sub {
+    color: white;
+    background-color: rgb(241, 133, 133);
+    font-size: 25px;
+    padding: 12px 43px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#join {
+   color: rgb(77, 135, 236);
+   background-color: white;
+   font-size: 30px;
+   border-color:  rgb(77, 135, 236);
+   padding: 10px 25px;
+   margin: 20px;
+   cursor: pointer;
+   border-style: solid;
+}
+
+#tweet {
+   background-color: rgb(77, 135, 236);
+   color: white;
+   border-radius: 40px;
+   font-weight: bold;
+   padding: 20px 40px;;
+   margin: 20px;
+   font-size: 25px;
+   border: none;
+   cursor: pointer; 
+}
+
+#uber {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+#uber:hover {
+    opacity: 0.8;
+}
+
+#amazon {
+    color: black;
+    background-color: rgb(255,216,20);
+    padding: 10px 60px;
+    margin: 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#amazon:hover {
+    background-color: rgb(235, 201, 14)
+}
+
+#github {
+    color: white;
+    background: rgb(46,164,79);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#github:hover {
+ box-shadow: 5px 5px 5px rgba(46,164,79,0.45)
+}
+
+#started {
+    color: white;
+    background-color: rgb(121, 82, 179);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#started:hover {
+    background-color: rgb(90, 61, 133)
+}
+
+#download {
+    color: rgb(108, 117, 125);
+    background-color: white;
+    padding: 10px 25px;
+    border: solid 1px;
+    margin: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color, 1s;
+}
+
+#download:hover {
+    color: white;
+    background-color: rgb(108, 117, 125); 
+}
+
+#apply {
+    color: white;
+    background-color: rgb(6, 83, 159);
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    margin: 12px;
+    cursor: pointer;
+}
+
+#apply:hover {
+    background-color: rgb(40, 135, 231);
+}
+
+#save {
+    color: rgb(10,102,194);
+    background-color: white;
+    border: solid 1px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#save:hover {
+    background-color:rgb(166, 200, 233);
+    border: solid 2px;
+}
+
+#save:active {
+    background-color:  rgb(6, 83, 159);
+    
+}
