@@ -1,3 +1,7 @@
+body {    
+    text-align: center;
+}
+
 #sub {
     color: white;
     background-color: rgb(241, 133, 133);
@@ -137,4 +141,136 @@
 #save:active {
     background-color:  rgb(6, 83, 159);
     
+}
+
+#back, #next{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+a {
+    font-size: 18px;
+    margin: 4px;
+}
+
+#stretch{
+    background-color: rgb(74, 121, 2);
+    color: white;
+    padding: 15px 30px;
+    margin: 5px;
+    border: none;
+    font-size: 18px;
+    transition: padding 1s;
+    margin: 14px;
+}
+
+#stretch:hover{
+    padding: 18px 40px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#shadow {
+    background-color: rgb(74, 121, 2);
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 5px rgba(133, 201, 152, 0.45);
+    transition: padding 1s;
+    border: none;
+    margin: 14px;
+    cursor: pointer;
+}
+
+#shadow:active{
+ padding: 10px 15px;
+}
+
+#one, #two, #three {
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(133, 201, 152, 0.45);
+    background-color: green;
+    color: white;
+    margin: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+#three:hover{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#two:hover {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#one:hover{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#tahoma{
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#para2{
+     font-family: Arial;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#sales{
+    margin-top: 0;
+    color: rgb(226, 9, 9);
+    font-style: italic;
+}
+
+#verdana{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#beg{
+    margin-top: 0;
+    color: gray;
+}
+
+#begged{
+    width: 275px;
+    margin-left: 520px;
+    margin-bottom: 5px;
+}
+
+#letsgo{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+#last{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#apple{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+#more {
+    color: rgb(105, 105, 235)
 }
