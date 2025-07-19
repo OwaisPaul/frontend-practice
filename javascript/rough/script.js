@@ -171,35 +171,114 @@ submitBtn.onclick = () => {
    display.innerText = `Your name is:${input.value}`
 }
 
-const todoList = ['batte', 'chai', 'shongun']
+const todoList = [
+      {name:'batte', dueDate: '12-02-24'},
+      {name:'chai', dueDate: '02-03-22'},
+      {name: 'shongun', dueDate: '22-12-93'}
+   ];
 
 renderTodo();
 
 function renderTodo() {
 
-let todoListHtml = '';
+let todoListHTML = '';
 
 for(let i = 0; i < todoList.length; i++){
-   const todo = todoList[i];
-   const html = `<p>${todo}</p>`;
-
-   todoListHtml += html;
+   const todoObject = todoList[i];
+   const {name, dueDate} = todoObject;
+   const html = `
+   <div>${name}</div>
+   <div>${dueDate}</div>
+   <button onclick="
+   todoList.splice(${i}, 1);
+   renderTodo();" class='delete-btn'>
+   Delete</button>
+   `; 
+   console.log(dueDate)
+    console.log(todoListHTML)
+   todoListHTML += html;
+   console.log(todoListHTML)
 }
+ 
 
-document.querySelector('#list')
-    .innerText = todoListHtml;
+document.querySelector('.list')
+    .innerHTML = todoListHTML;
 }
 function add() {
-   const inputElement = document.querySelector('#input-todo')
-   const name = inputElement.value
-   todoList.push(name)
+   const inputTodo = document.querySelector('#input-todo')
+   const inputDate = document.querySelector('#input-date')
+   const dueDate = inputDate.value
+   const name = inputTodo.value
+   todoList.push({name, dueDate})
    console.log(todoList)
 
 
    
-   inputElement.value = '';
+   inputTodo.value = '';
+   inputDate.value = ''
 
    renderTodo();
 }
 
+// replacing an item of an array
 
+const nums = [10,20,30]
+
+nums[2] = 99
+
+console.log(nums)
+
+//getting last value of an array
+
+function getLastValue(array) {
+   return  array[array.length -1]
+}
+
+console.log(getLastValue([1,2,3,3,5]))
+console.log(getLastValue(['hi','hello','good']))
+
+// swapping first and last items of an array
+
+function arraySwap(array) {
+   return [array[0], array[array.length - 1]] = [array[array.length - 1], array[0]]
+}
+
+console.log(arraySwap([1,20,22,23,5]))
+console.log(arraySwap(['hi','hello','good']))
+
+// for loop that counts up from 0 to 10
+
+for(let i= 0; i <= 10; i+=2){
+   console.log(i)
+}
+
+// for loop that counts down from 5 to 0
+
+for(let i=5; i >= 0; i--){
+   console.log(i)
+}
+
+// using while loops to the above two exercises
+
+// let i = 0;
+
+// while(i <= 10){
+//    i+=2
+//    console.log(i)
+// }
+
+let i=5;
+while(i >= 0){
+   i--
+   console.log(i)
+}
+
+// function takes an array and return each item plus 1
+
+function addOne(array) {
+   for(let i=0; i < array.length; i++){
+      return array[i] += 1
+   }
+}
+
+console.log(addOne([1,2,3]));
