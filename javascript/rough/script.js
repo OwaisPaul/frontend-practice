@@ -282,3 +282,57 @@ function addOne(array) {
 }
 
 console.log(addOne([1,2,3]));
+
+
+const arr = [1,3,3,4]
+
+const lumpSum = arr.reduce((sum, current) => sum + current, 0)
+console.log(lumpSum);
+
+const arrayOfStrings = ['hello', 'how','are','search', 'you']
+
+if(arrayOfStrings.includes('not found')){
+   console.log(arrayOfStrings.indexOf('not found'))
+} else {
+   console.log(-1)
+}
+
+const addThem = (a,b) => {
+   return a + b;
+}
+
+console.log(addThem(2,3))
+console.log(addThem(3,9))
+
+
+
+function finished(){
+   setTimeout(function(){
+   const clickMe = document.querySelector('#async')
+   clickMe.innerText = 'Loading'
+
+}, 1000);
+setTimeout(function(){
+   
+   const clickMe = document.querySelector('#async')
+   clickMe.innerText = 'Finished'
+}, 3000)
+}
+
+const multiply = (one, two) => one*two
+
+console.log(multiply(2,3));
+console.log(multiply(7,10));
+
+function countPositive(array){
+   const greaterItem =  array.forEach((value) => value > 0)
+   return greaterItem;   
+}
+
+console.log(countPositive([1,23,3,3,38]));
+
+
+
+
+
+
